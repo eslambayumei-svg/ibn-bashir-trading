@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --forest: #1E6B1E;
+    --forest-light: #2E8B2E;
+    --olive: #3A7D3A;
+    --leaf: #52C752;
+    --gold: #C9A84C;
+    --cream: #F5F0E8;
+    --cream-light: #FAF7F2;
+    --charcoal: #2C2C2C;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-cream-light text-charcoal font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center gap-2 bg-forest text-cream px-6 py-3 rounded-full font-body font-medium text-sm tracking-wide transition-all duration-300 hover:bg-forest-light hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 bg-gold text-forest-dark px-6 py-3 rounded-full font-body font-semibold text-sm tracking-wide transition-all duration-300 hover:bg-gold-dark hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center gap-2 border-2 border-forest text-forest px-6 py-3 rounded-full font-body font-medium text-sm tracking-wide transition-all duration-300 hover:bg-forest hover:text-cream hover:-translate-y-0.5;
+  }
+
+  .btn-whatsapp {
+    @apply inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 rounded-full font-body font-semibold text-sm tracking-wide transition-all duration-300 hover:bg-[#1ebe5d] hover:shadow-lg hover:-translate-y-0.5;
+  }
+
+  .section-pad {
+    @apply py-20 px-6 md:px-10 lg:px-16;
+  }
+
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-cream-dark overflow-hidden transition-all duration-300 hover:shadow-md hover:-translate-y-1;
+  }
+
+  .tag {
+    @apply inline-block text-xs font-body font-semibold tracking-widest uppercase text-gold;
+  }
+}
+
+/* Animated underline for nav links */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1.5px;
+  background: #C9A84C;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Fade-up animation on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--forest-light);
+  border-radius: 3px;
+}
