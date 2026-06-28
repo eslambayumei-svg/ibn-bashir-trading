@@ -8,8 +8,8 @@ import CTASection from '@/components/ui/CTASection'
 import { getWhatsAppUrl } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Services – Garden Maintenance, Landscaping & Agriculture Services in Oman',
-  description: 'Ibn Bashir Trading offers professional garden maintenance, irrigation support, pest control supply, landscaping assistance, and agriculture consultation services across Oman.',
+  title: 'Services – Garden Maintenance, Landscaping & Irrigation in Muscat Oman | Ibn Bashir',
+  description: 'Professional garden maintenance, irrigation systems, pest control supply & landscaping services in Muscat, Oman. Ibn Bashir Trading serves villas, farms, government & commercial clients. Call +968 9942 0951.',
   keywords: ['garden maintenance Oman', 'landscaping services Oman', 'irrigation system Oman', 'pest control Oman', 'agriculture consultation Oman'],
 }
 

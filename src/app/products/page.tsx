@@ -4,9 +4,10 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import CTASection from '@/components/ui/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Products – Gardening Tools, Seeds, Fertilizers, Pesticides & Irrigation in Oman',
-  description: 'Browse Ibn Bashir Trading\'s full product range: gardening tools, agricultural equipment, pesticides, seeds, fertilizers, irrigation tools, and garden care products. Available in our Muscat showroom.',
-  keywords: ['gardening tools Oman', 'seeds Oman', 'fertilizers Oman', 'pesticides Oman', 'irrigation tools Oman', 'agricultural equipment Oman', 'garden products Oman'],
+  title: 'Products – Agricultural Tools, Pesticides, Seeds & Fertilizers in Muscat Oman | Ibn Bashir',
+  description: 'Buy agricultural tools, pesticides, seeds, fertilizers, irrigation systems & garden equipment in Muscat, Oman. Visit Ibn Bashir Trading showroom in Al Ghubrah, Bawshar. Call +968 9942 0951.',
+  keywords: ['buy pesticides Muscat', 'agricultural tools Muscat Oman', 'seeds fertilizers Muscat', 'irrigation systems Oman', 'gardening tools shop Muscat', 'garden equipment Bawshar', 'fertilizers shop Oman', 'buy seeds Muscat Oman'],
+  alternates: { canonical: 'https://www.ibnbashir.com/products' },
 }
 
 const PRODUCTS = [
