@@ -19,5 +19,5 @@ export const SITE_CONFIG = {
 
 export const getWhatsAppUrl = (message?: string) => {
   const msg = encodeURIComponent(message || SITE_CONFIG.whatsappMessage)
-  return `https://wa.me/${SITE_CONFIG.whatsapp}?text=${msg}`
+  return `https://api.whatsapp.com/send?phone=${SITE_CONFIG.whatsapp}&text=${msg}`
 }
