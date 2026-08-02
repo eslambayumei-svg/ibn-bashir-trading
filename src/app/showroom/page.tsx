@@ -83,7 +83,7 @@ export default function ShowroomPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <div className="rounded-2xl overflow-hidden flex flex-col bg-forest">
               <Image
-                src="/images/WhatsApp Image 2026-07-04 at 1.18.06 PM (1).jpeg"
+                src="/images/showroom.jpg.jpeg"
                 alt="Ibn Bashir Trading Showroom"
                 width={800}
                 height={900}
