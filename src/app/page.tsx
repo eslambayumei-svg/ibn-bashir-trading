@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import {
   MessageCircle, ArrowRight, Leaf, Droplets, Bug, Sprout,
@@ -38,12 +39,12 @@ const HOME_SERVICES = [
 ]
 
 const HOME_PRODUCTS = [
-  { title: 'Gardening Tools', desc: 'Professional-grade hand tools and equipment for every gardening task.', emoji: '🪴', color: 'bg-leaf/10' },
-  { title: 'Seeds', desc: 'Certified seeds for flowers, vegetables, grass, and ornamental plants.', emoji: '🌱', color: 'bg-olive/10' },
-  { title: 'Fertilizers', desc: 'Organic and chemical fertilizers to enrich soil and boost plant growth.', emoji: '🌿', color: 'bg-gold/10' },
-  { title: 'Pesticides', desc: 'Effective pest and weed control products for all types of landscapes.', emoji: '🔬', color: 'bg-forest/10' },
-  { title: 'Irrigation Tools', desc: 'Hoses, pipes, pumps, drip systems, and all irrigation essentials.', emoji: '💧', color: 'bg-leaf/10' },
-  { title: 'Agricultural Equipment', desc: 'Machinery and power tools for large-scale agricultural operations.', emoji: '🚜', color: 'bg-olive/10' },
+  { title: 'Gardening Tools', desc: 'Professional-grade hand tools and equipment for every gardening task.', image: '/images/products/gardening-tools.jpg.jpeg', color: 'bg-leaf/10' },
+  { title: 'Seeds', desc: 'Certified seeds for flowers, vegetables, grass, and ornamental plants.', image: '/images/products/seeds.jpg.jpeg', color: 'bg-olive/10' },
+  { title: 'Fertilizers', desc: 'Organic and chemical fertilizers to enrich soil and boost plant growth.', image: '/images/products/fertilizers.jpg.jpeg', color: 'bg-gold/10' },
+  { title: 'Pesticides', desc: 'Effective pest and weed control products for all types of landscapes.', image: '/images/products/pesticides.jpg (2).jpeg', color: 'bg-forest/10' },
+  { title: 'Irrigation Tools', desc: 'Hoses, pipes, pumps, drip systems, and all irrigation essentials.', image: '/images/products/irrigation-tools.jpg.jpeg', color: 'bg-leaf/10' },
+  { title: 'Agricultural Equipment', desc: 'Machinery and power tools for large-scale agricultural operations.', image: '/images/products/agricultural-equipment.jpg.jpeg', color: 'bg-olive/10' },
 ]
 
 const CLIENT_TYPES = [
@@ -150,21 +151,25 @@ export default function HomePage() {
             </div>
             {/* Visual */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="bg-forest rounded-2xl h-48 flex flex-col items-center justify-center gap-2 text-cream">
-                <span className="text-5xl">🌿</span>
-                <span className="text-xs font-body tracking-widest uppercase text-cream/70">Garden Care</span>
+              <div className="relative rounded-2xl h-48 overflow-hidden">
+                <Image src="/images/intro-garden-care.jpg" alt="Garden Care" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <span className="absolute bottom-3 left-0 right-0 text-center text-xs font-body tracking-widest uppercase text-white font-semibold">Garden Care</span>
               </div>
-              <div className="bg-gold/20 rounded-2xl h-48 flex flex-col items-center justify-center gap-2 mt-8">
-                <span className="text-5xl">🌾</span>
-                <span className="text-xs font-body tracking-widest uppercase text-olive">Agriculture</span>
+              <div className="relative rounded-2xl h-48 overflow-hidden mt-8">
+                <Image src="/images/intro-agriculture.jpg" alt="Agriculture" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <span className="absolute bottom-3 left-0 right-0 text-center text-xs font-body tracking-widest uppercase text-white font-semibold">Agriculture</span>
               </div>
-              <div className="bg-leaf/20 rounded-2xl h-48 flex flex-col items-center justify-center gap-2">
-                <span className="text-5xl">💧</span>
-                <span className="text-xs font-body tracking-widest uppercase text-forest">Irrigation</span>
+              <div className="relative rounded-2xl h-48 overflow-hidden">
+                <Image src="/images/intro-irrigation.jpg" alt="Irrigation" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <span className="absolute bottom-3 left-0 right-0 text-center text-xs font-body tracking-widest uppercase text-white font-semibold">Irrigation</span>
               </div>
-              <div className="bg-cream-dark rounded-2xl h-48 flex flex-col items-center justify-center gap-2 mt-8">
-                <span className="text-5xl">🔧</span>
-                <span className="text-xs font-body tracking-widest uppercase text-charcoal/60">Equipment</span>
+              <div className="relative rounded-2xl h-48 overflow-hidden mt-8">
+                <Image src="/images/intro-equipment.jpg" alt="Equipment" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <span className="absolute bottom-3 left-0 right-0 text-center text-xs font-body tracking-widest uppercase text-white font-semibold">Equipment</span>
               </div>
             </div>
           </div>
@@ -185,7 +190,7 @@ export default function HomePage() {
                 key={p.title}
                 title={p.title}
                 description={p.desc}
-                imagePlaceholder={p.emoji}
+                image={p.image}
                 imageColor={p.color}
               />
             ))}
@@ -254,9 +259,16 @@ export default function HomePage() {
       <section className="section-pad bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="bg-cream-dark rounded-2xl h-72 flex flex-col items-center justify-center gap-3">
-              <span className="text-7xl">🏪</span>
-              <span className="text-sm font-body text-charcoal/60 tracking-widest uppercase">Our Showroom</span>
+            <div className="relative rounded-2xl h-72 overflow-hidden">
+              <Image
+                src="/images/WhatsApp Image 2026-07-04 at 1.18.06 PM (1).jpeg"
+                alt="Ibn Bashir Trading Showroom"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+              <span className="absolute bottom-4 left-0 right-0 text-center text-sm font-body text-white tracking-widest uppercase font-semibold">Our Showroom</span>
             </div>
             <div>
               <span className="tag mb-3 block">Visit Us</span>
