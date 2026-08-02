@@ -74,16 +74,16 @@ export default function ShowroomPage() {
       <section className="section-pad bg-cream-light">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-            <div className="rounded-2xl h-80 relative overflow-hidden">
+            <div className="rounded-2xl overflow-hidden flex flex-col bg-forest">
               <Image
                 src="/images/WhatsApp Image 2026-07-04 at 1.18.06 PM (1).jpeg"
                 alt="Ibn Bashir Trading Showroom"
-                fill
-                className="object-cover"
+                width={800}
+                height={900}
+                className="w-full h-auto object-contain"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-              <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
+              <div className="p-6 text-center">
                 <h3 className="font-display font-bold text-cream text-2xl mb-1">Ibn Bashir Trading Showroom</h3>
                 <p className="text-cream/80 font-body text-sm mb-2">{SITE_CONFIG.addressFull}</p>
                 <div className="flex items-center justify-center gap-2 text-gold text-sm font-body">
