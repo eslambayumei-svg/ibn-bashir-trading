@@ -151,10 +151,25 @@ export default function HomePage() {
             </div>
             {/* Visual */}
             <div className="grid grid-cols-2 gap-4">
-              <div className="relative rounded-2xl h-48 overflow-hidden">
-                <Image src="/images/intro-garden-care.jpg.jpg" alt="Garden Care" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
+              <div className="relative rounded-2xl h-48 overflow-hidden garden-care-box">
+                <Image src="/images/intro-garden-care.jpg.jpg" alt="Garden Care" fill className="object-cover garden-care-img-1" sizes="(max-width: 1024px) 50vw, 25vw" />
+                <Image src="/images/intro-garden-care-2.jpg.jpg" alt="Garden Care" fill className="object-cover garden-care-img-2" sizes="(max-width: 1024px) 50vw, 25vw" style={{opacity:0}} />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <span className="absolute bottom-3 left-0 right-0 text-center text-xs font-body tracking-widest uppercase text-white font-semibold">Garden Care</span>
+                <style>{`
+                  @keyframes gardenFade {
+                    0%, 40% { opacity: 1; }
+                    50%, 90% { opacity: 0; }
+                    100% { opacity: 1; }
+                  }
+                  @keyframes gardenFade2 {
+                    0%, 40% { opacity: 0; }
+                    50%, 90% { opacity: 1; }
+                    100% { opacity: 0; }
+                  }
+                  .garden-care-img-1 { animation: gardenFade 6s infinite; }
+                  .garden-care-img-2 { animation: gardenFade2 6s infinite; }
+                `}</style>
               </div>
               <div className="relative rounded-2xl h-48 overflow-hidden mt-8">
                 <Image src="/images/intro-agriculture.jpg.jpg" alt="Agriculture" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
