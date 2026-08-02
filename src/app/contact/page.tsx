@@ -5,9 +5,15 @@ import ContactForm from '@/components/ui/ContactForm'
 import MapSection from '@/components/ui/MapSection'
 
 export const metadata: Metadata = {
-  title: 'Contact Ibn Bashir Trading – Agriculture & Garden Supplies Muscat Oman | +968 9942 0951',
-  description: 'Contact Ibn Bashir Trading in Muscat, Oman. Visit our showroom opposite Sultan Qaboos Sports Complex, Al Ghubrah Bawshar. Call +968 9942 0951 or WhatsApp for quotes on agricultural tools, pesticides & more.',
-  keywords: ['contact agriculture supplier Muscat', 'Ibn Bashir Trading phone number', 'garden shop Bawshar Muscat', 'agriculture showroom Ghubrah Oman', 'pesticides supplier contact Muscat'],
+  title: 'Contact Ibn Bashir Trading – Garden & Agriculture Supplier Muscat Oman | +968 9942 0951',
+  description: 'Contact Ibn Bashir Trading in Muscat Oman for gardening tools, seeds, fertilizers, pesticides & garden maintenance. Showroom opposite Sultan Qaboos Sports Complex, Al Ghubrah, Bawshar. Call +968 9942 0951 or WhatsApp.',
+  keywords: [
+    'contact agriculture supplier Muscat', 'Ibn Bashir Trading phone number', 'Ibn Bashir Trading WhatsApp',
+    'garden shop Bawshar Muscat', 'agriculture showroom Al Ghubrah Oman',
+    'pesticides supplier contact Muscat', 'seeds shop contact Oman', 'fertilizers supplier Muscat phone',
+    'garden maintenance contact Muscat', 'garden tools shop Muscat phone',
+    'agriculture store Muscat location', 'garden supplier Oman contact',
+  ],
   alternates: { canonical: 'https://www.ibnbashir.com/contact' },
 }
 

@@ -8,9 +8,16 @@ import MapSection from '@/components/ui/MapSection'
 import CTASection from '@/components/ui/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Showroom – Agriculture & Gardening Products in Muscat, Oman | Ibn Bashir Trading',
-  description: 'Visit Ibn Bashir Trading\'s showroom in Muscat, Oman. Browse gardening tools, agricultural equipment, seeds, fertilizers, pesticides, and irrigation supplies in person.',
-  keywords: ['gardening showroom Muscat', 'agriculture store Oman', 'gardening tools shop Oman', 'garden products Muscat'],
+  title: 'Agriculture & Garden Showroom in Muscat Oman – Seeds, Tools, Fertilizers | Ibn Bashir Trading',
+  description: 'Visit Ibn Bashir Trading showroom in Al Ghubrah, Bawshar, Muscat Oman. Browse gardening tools, seeds, fertilizers, pesticides, irrigation supplies & agricultural equipment in person. Call +968 9942 0951.',
+  keywords: [
+    'gardening showroom Muscat', 'agriculture showroom Oman', 'garden store Muscat',
+    'seeds shop Muscat Oman', 'fertilizers shop Muscat', 'pesticides store Oman',
+    'gardening tools shop Muscat', 'garden products Al Ghubrah', 'agriculture store Bawshar',
+    'garden center Muscat Oman', 'buy garden tools in person Muscat', 'irrigation supplies store Oman',
+    'متجر زراعي مسقط', 'محل حدائق مسقط عمان',
+  ],
+  alternates: { canonical: 'https://www.ibnbashir.com/showroom' },
 }
 
 const SHOWROOM_CATEGORIES = [

@@ -6,9 +6,18 @@ import CTASection from '@/components/ui/CTASection'
 import { getWhatsAppUrl } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Products – Agricultural Tools, Pesticides, Seeds & Fertilizers in Muscat Oman | Ibn Bashir',
-  description: 'Buy agricultural tools, pesticides, seeds, fertilizers, irrigation systems & garden equipment in Muscat, Oman. Visit Ibn Bashir Trading showroom in Al Ghubrah, Bawshar. Call +968 9942 0951.',
-  keywords: ['buy pesticides Muscat', 'agricultural tools Muscat Oman', 'seeds fertilizers Muscat', 'irrigation systems Oman', 'gardening tools shop Muscat', 'garden equipment Bawshar', 'fertilizers shop Oman', 'buy seeds Muscat Oman'],
+  title: 'Buy Gardening Tools, Seeds, Fertilizers, Pesticides & Irrigation in Muscat Oman | Ibn Bashir',
+  description: 'Buy agricultural tools, pesticides, seeds, fertilizers, irrigation systems & garden equipment in Muscat Oman. 9 product categories in stock at our Al Ghubrah showroom, Bawshar, Muscat. Call +968 9942 0951.',
+  keywords: [
+    'buy gardening tools Muscat', 'buy agricultural tools Oman', 'buy pesticides Muscat Oman',
+    'buy seeds Muscat', 'buy fertilizers Oman', 'buy irrigation systems Oman',
+    'gardening tools shop Muscat', 'seeds shop Muscat Oman', 'fertilizers shop Oman',
+    'pesticides shop Muscat', 'garden equipment Bawshar', 'garden tools Al Ghubrah',
+    'irrigation supplies Muscat', 'drip irrigation Oman', 'sprinkler system Oman',
+    'grass seeds Muscat', 'vegetable seeds Oman', 'organic fertilizers Muscat',
+    'herbicides Oman', 'insecticides Muscat', 'garden accessories Oman',
+    'بذور مسقط', 'أسمدة عمان', 'مبيدات مسقط', 'أدوات زراعية مسقط',
+  ],
   alternates: { canonical: 'https://www.ibnbashir.com/products' },
 }
 

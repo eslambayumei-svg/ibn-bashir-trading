@@ -12,9 +12,17 @@ import ProductCategoryCard from '@/components/ui/ProductCategoryCard'
 import CTASection from '@/components/ui/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Ibn Bashir Trading – Trusted Agriculture & Gardening Solutions in Oman Since 2011',
-  description: 'Ibn Bashir Trading supplies quality gardening tools, pesticides, seeds, fertilizers, irrigation materials, and professional garden maintenance services across Oman. Serving government, private, and commercial clients since 2011.',
-  keywords: ['Oman agriculture supplier', 'gardening tools Oman', 'pesticides Oman', 'garden maintenance Oman', 'landscaping Oman', 'irrigation tools Oman'],
+  title: 'Ibn Bashir Trading – Buy Gardening Tools, Seeds, Fertilizers & Pesticides in Muscat Oman',
+  description: 'Buy agricultural tools, seeds, fertilizers, pesticides & irrigation systems in Muscat Oman. Professional garden maintenance for villas, parks & farms. Ibn Bashir Trading – Oman\'s trusted agriculture supplier since 2011. Call +968 9942 0951.',
+  keywords: [
+    'buy gardening tools Muscat', 'buy seeds Muscat Oman', 'buy fertilizers Oman', 'buy pesticides Muscat',
+    'garden maintenance Muscat', 'park maintenance Oman', 'lawn mowing Muscat', 'grass trimming Oman',
+    'agriculture supplier Muscat', 'irrigation systems Muscat', 'garden supplies Oman',
+    'seeds shop Muscat', 'fertilizers shop Oman', 'pesticides shop Muscat',
+    'villa garden maintenance Oman', 'garden care Muscat', 'landscaping Muscat Oman',
+    'أدوات زراعية مسقط', 'صيانة حدائق مسقط', 'بذور مسقط', 'أسمدة عمان', 'مبيدات مسقط',
+  ],
+  alternates: { canonical: 'https://www.ibnbashir.com' },
 }
 
 const STATS = [

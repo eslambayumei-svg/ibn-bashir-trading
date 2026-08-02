@@ -4,9 +4,15 @@ import SectionHeading from '@/components/ui/SectionHeading'
 import CTASection from '@/components/ui/CTASection'
 
 export const metadata: Metadata = {
-  title: 'About Us – Ibn Bashir Trading | Agriculture & Garden Supplier Muscat Oman Since 2011',
-  description: 'Ibn Bashir Trading has been Muscat\'s trusted agriculture and gardening supplier since 2011. Located in Al Ghubrah, Bawshar, Muscat. Serving government, private villas, farms & commercial clients across Oman.',
-  keywords: ['Ibn Bashir Trading Muscat', 'agriculture company Muscat Oman', 'garden supplier Bawshar Muscat', 'agricultural tools supplier Oman since 2011', 'Ghubrah agriculture shop'],
+  title: 'About Ibn Bashir Trading – Muscat\'s Trusted Agriculture & Garden Supplier Since 2011 | Oman',
+  description: 'Ibn Bashir Trading has been Muscat\'s trusted supplier of agricultural tools, seeds, fertilizers, pesticides & garden maintenance since 2011. Showroom in Al Ghubrah, Bawshar, Muscat Oman. Serving villas, parks, farms & government clients.',
+  keywords: [
+    'Ibn Bashir Trading Muscat', 'Ibn Bashir Trading Oman', 'agriculture company Muscat Oman',
+    'garden supplier Muscat since 2011', 'agricultural tools supplier Oman',
+    'Ghubrah agriculture shop', 'Bawshar garden store', 'trusted agriculture supplier Oman',
+    'best garden supplier Muscat', 'garden maintenance company Muscat',
+    'ابن بشير للتجارة مسقط', 'شركة زراعية مسقط عمان',
+  ],
   alternates: { canonical: 'https://www.ibnbashir.com/about' },
 }
 

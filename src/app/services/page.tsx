@@ -8,9 +8,18 @@ import CTASection from '@/components/ui/CTASection'
 import { getWhatsAppUrl } from '@/lib/config'
 
 export const metadata: Metadata = {
-  title: 'Services – Garden Maintenance, Landscaping & Irrigation in Muscat Oman | Ibn Bashir',
-  description: 'Professional garden maintenance, irrigation systems, pest control supply & landscaping services in Muscat, Oman. Ibn Bashir Trading serves villas, farms, government & commercial clients. Call +968 9942 0951.',
-  keywords: ['garden maintenance Oman', 'landscaping services Oman', 'irrigation system Oman', 'pest control Oman', 'agriculture consultation Oman'],
+  title: 'Garden Maintenance, Lawn Mowing, Landscaping & Irrigation Services Muscat Oman | Ibn Bashir',
+  description: 'Professional garden maintenance, lawn mowing, grass trimming, landscaping & irrigation services for villas, parks, farms & government in Muscat Oman. Ibn Bashir Trading – call +968 9942 0951.',
+  keywords: [
+    'garden maintenance Muscat', 'garden maintenance Oman', 'lawn mowing Muscat', 'grass trimming Oman',
+    'park maintenance Oman', 'landscaping services Muscat', 'landscaping Oman',
+    'villa garden maintenance Muscat', 'garden care service Oman', 'garden trimming Muscat',
+    'irrigation system Oman', 'drip irrigation installation Muscat', 'sprinkler system Oman',
+    'pest control supply Oman', 'agriculture consultation Muscat', 'garden service Bawshar',
+    'government garden maintenance Oman', 'commercial garden service Muscat',
+    'صيانة حدائق مسقط', 'قص عشب مسقط', 'خدمات تنسيق حدائق عمان', 'صيانة حدائق الفلل مسقط',
+  ],
+  alternates: { canonical: 'https://www.ibnbashir.com/services' },
 }
 
 const SERVICES = [
