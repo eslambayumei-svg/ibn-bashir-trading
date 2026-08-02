@@ -1,10 +1,12 @@
+import Image from 'next/image'
 import { MessageCircle, FileText } from 'lucide-react'
 import { getWhatsAppUrl } from '@/lib/config'
 
 interface ProductCategoryCardProps {
   title: string
   description: string
-  imagePlaceholder: string
+  image?: string
+  imagePlaceholder?: string
   imageColor?: string
   items?: string[]
 }
@@ -12,6 +14,7 @@ interface ProductCategoryCardProps {
 export default function ProductCategoryCard({
   title,
   description,
+  image,
   imagePlaceholder,
   imageColor = 'bg-forest/10',
   items = [],
@@ -20,11 +23,23 @@ export default function ProductCategoryCard({
 
   return (
     <div className="card flex flex-col">
-      {/* Image placeholder */}
-      <div className={`${imageColor} h-44 flex flex-col items-center justify-center gap-2 relative overflow-hidden`}>
-        <span className="text-4xl">{imagePlaceholder}</span>
-        <span className="text-xs font-body font-semibold tracking-widest uppercase text-forest/50">{title}</span>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/5 to-transparent" />
+      {/* Image */}
+      <div className={`${imageColor} h-52 relative overflow-hidden rounded-t-2xl`}>
+        {image ? (
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
+        ) : (
+          <div className="flex flex-col items-center justify-center h-full gap-2">
+            <span className="text-4xl">{imagePlaceholder}</span>
+            <span className="text-xs font-body font-semibold tracking-widest uppercase text-forest/50">{title}</span>
+          </div>
+        )}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
       </div>
       <div className="p-5 flex flex-col flex-1 gap-3">
         <h3 className="font-display font-bold text-forest-dark text-lg">{title}</h3>
