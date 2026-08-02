@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import Link from 'next/link'
 import { MapPin, Clock, Phone, MessageCircle, CheckCircle, ArrowRight, Star } from 'lucide-react'
 import { SITE_CONFIG, getWhatsAppUrl } from '@/lib/config'
@@ -13,14 +14,14 @@ export const metadata: Metadata = {
 }
 
 const SHOWROOM_CATEGORIES = [
-  { emoji: '🪴', title: 'Gardening Tools', desc: 'Full range of hand tools, pruning equipment, and garden accessories.' },
-  { emoji: '🌱', title: 'Seeds & Planting', desc: 'Certified seeds for grass, vegetables, flowers, herbs, and ornamentals.' },
-  { emoji: '🌿', title: 'Fertilizers', desc: 'Granular, liquid, and organic fertilizers for all soil types.' },
-  { emoji: '🔬', title: 'Pesticides', desc: 'Licensed pest control products for residential and commercial use.' },
-  { emoji: '💧', title: 'Irrigation Supplies', desc: 'Drip systems, sprinklers, pipes, hoses, and all fittings.' },
-  { emoji: '🚜', title: 'Agricultural Equipment', desc: 'Power tools and machinery for farms and large outdoor spaces.' },
-  { emoji: '🪹', title: 'Planting Accessories', desc: 'Pots, trays, growing media, stakes, and garden care items.' },
-  { emoji: '🏡', title: 'Garden Care', desc: 'Mulch, bark chips, weed barriers, and outdoor décor.' },
+  { image: '/images/products/gardening-tools.jpg.jpeg', title: 'Gardening Tools', desc: 'Full range of hand tools, pruning equipment, and garden accessories.' },
+  { image: '/images/products/seeds.jpg.jpeg', title: 'Seeds & Planting', desc: 'Certified seeds for grass, vegetables, flowers, herbs, and ornamentals.' },
+  { image: '/images/products/fertilizers.jpg.jpeg', title: 'Fertilizers', desc: 'Granular, liquid, and organic fertilizers for all soil types.' },
+  { image: '/images/products/pesticides.jpg (2).jpeg', title: 'Pesticides', desc: 'Licensed pest control products for residential and commercial use.' },
+  { image: '/images/products/irrigation-tools.jpg.jpeg', title: 'Irrigation Supplies', desc: 'Drip systems, sprinklers, pipes, hoses, and all fittings.' },
+  { image: '/images/products/agricultural-equipment.jpg.jpeg', title: 'Agricultural Equipment', desc: 'Power tools and machinery for farms and large outdoor spaces.' },
+  { image: '/images/products/planting-accessories.jpg.jpeg', title: 'Planting Accessories', desc: 'Pots, trays, growing media, stakes, and garden care items.' },
+  { image: '/images/products/garden-care.jpg.jpeg', title: 'Garden Care', desc: 'Mulch, bark chips, weed barriers, and outdoor décor.' },
 ]
 
 const REASONS = [
@@ -116,10 +117,21 @@ export default function ShowroomPage() {
           />
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-5">
             {SHOWROOM_CATEGORIES.map((cat) => (
-              <div key={cat.title} className="card p-5 flex flex-col items-center text-center gap-3">
-                <span className="text-4xl">{cat.emoji}</span>
-                <h3 className="font-display font-bold text-forest-dark text-base">{cat.title}</h3>
-                <p className="text-xs font-body text-charcoal/60 leading-relaxed">{cat.desc}</p>
+              <div key={cat.title} className="card flex flex-col overflow-hidden">
+                <div className="relative h-36 w-full">
+                  <Image
+                    src={cat.image}
+                    alt={cat.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                </div>
+                <div className="p-4 flex flex-col gap-1.5 text-center">
+                  <h3 className="font-display font-bold text-forest-dark text-base">{cat.title}</h3>
+                  <p className="text-xs font-body text-charcoal/60 leading-relaxed">{cat.desc}</p>
+                </div>
               </div>
             ))}
           </div>
