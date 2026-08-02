@@ -74,13 +74,22 @@ export default function ShowroomPage() {
       <section className="section-pad bg-cream-light">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-            <div className="bg-forest rounded-2xl h-80 flex flex-col items-center justify-center gap-4 text-center px-8">
-              <span className="text-7xl">🏪</span>
-              <h3 className="font-display font-bold text-cream text-2xl">Ibn Bashir Trading Showroom</h3>
-              <p className="text-cream/70 font-body text-sm">{SITE_CONFIG.addressFull}</p>
-              <div className="flex items-center gap-2 text-gold text-sm font-body">
-                <Clock className="w-4 h-4" />
-                {SITE_CONFIG.workingHours}
+            <div className="rounded-2xl h-80 relative overflow-hidden">
+              <Image
+                src="/images/WhatsApp Image 2026-07-04 at 1.18.06 PM (1).jpeg"
+                alt="Ibn Bashir Trading Showroom"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 text-center">
+                <h3 className="font-display font-bold text-cream text-2xl mb-1">Ibn Bashir Trading Showroom</h3>
+                <p className="text-cream/80 font-body text-sm mb-2">{SITE_CONFIG.addressFull}</p>
+                <div className="flex items-center justify-center gap-2 text-gold text-sm font-body">
+                  <Clock className="w-4 h-4" />
+                  {SITE_CONFIG.workingHours}
+                </div>
               </div>
             </div>
             <div>
