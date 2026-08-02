@@ -152,22 +152,22 @@ export default function HomePage() {
             {/* Visual */}
             <div className="grid grid-cols-2 gap-4">
               <div className="relative rounded-2xl h-48 overflow-hidden">
-                <Image src="/images/intro-garden-care.jpg" alt="Garden Care" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
+                <Image src="/images/intro-garden-care.jpg.jpg" alt="Garden Care" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <span className="absolute bottom-3 left-0 right-0 text-center text-xs font-body tracking-widest uppercase text-white font-semibold">Garden Care</span>
               </div>
               <div className="relative rounded-2xl h-48 overflow-hidden mt-8">
-                <Image src="/images/intro-agriculture.jpg" alt="Agriculture" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
+                <Image src="/images/intro-agriculture.jpg.jpg" alt="Agriculture" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <span className="absolute bottom-3 left-0 right-0 text-center text-xs font-body tracking-widest uppercase text-white font-semibold">Agriculture</span>
               </div>
               <div className="relative rounded-2xl h-48 overflow-hidden">
-                <Image src="/images/intro-irrigation.jpg" alt="Irrigation" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
+                <Image src="/images/intro-irrigation.jpg.jpg" alt="Irrigation" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <span className="absolute bottom-3 left-0 right-0 text-center text-xs font-body tracking-widest uppercase text-white font-semibold">Irrigation</span>
               </div>
               <div className="relative rounded-2xl h-48 overflow-hidden mt-8">
-                <Image src="/images/intro-equipment.jpg" alt="Equipment" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
+                <Image src="/images/intro-equipment.jpg.jpg" alt="Equipment" fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <span className="absolute bottom-3 left-0 right-0 text-center text-xs font-body tracking-widest uppercase text-white font-semibold">Equipment</span>
               </div>
