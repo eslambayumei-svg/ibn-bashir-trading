@@ -258,14 +258,14 @@ export default function HomePage() {
       {/* Showroom */}
       <section className="section-pad bg-white">
         <div className="container-max">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="rounded-2xl overflow-hidden bg-forest">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div className="rounded-2xl overflow-hidden">
               <Image
                 src="/images/WhatsApp Image 2026-07-04 at 1.18.06 PM (1).jpeg"
                 alt="Ibn Bashir Trading Showroom"
                 width={800}
                 height={900}
-                className="w-full h-auto object-contain"
+                className="w-full h-auto"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
