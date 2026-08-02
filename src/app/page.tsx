@@ -259,16 +259,15 @@ export default function HomePage() {
       <section className="section-pad bg-white">
         <div className="container-max">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="relative rounded-2xl h-72 overflow-hidden">
+            <div className="rounded-2xl overflow-hidden bg-forest">
               <Image
                 src="/images/WhatsApp Image 2026-07-04 at 1.18.06 PM (1).jpeg"
                 alt="Ibn Bashir Trading Showroom"
-                fill
-                className="object-cover"
+                width={800}
+                height={900}
+                className="w-full h-auto object-contain"
                 sizes="(max-width: 1024px) 100vw, 50vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
-              <span className="absolute bottom-4 left-0 right-0 text-center text-sm font-body text-white tracking-widest uppercase font-semibold">Our Showroom</span>
             </div>
             <div>
               <span className="tag mb-3 block">Visit Us</span>
